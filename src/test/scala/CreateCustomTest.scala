@@ -32,15 +32,6 @@ class CreateCustomTest extends FlatSpec with TestSetUp {
 
     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS)
 
-//    val placeOrder=driver.findElementByCssSelector("a._1QZ6fC")
-//    val mouseHover1 = new Actions(driver)
-//    mouseHover1.moveToElement(placeOrder)
-//    mouseHover1.build().perform()
-//    webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("a._1QZ6fC")))
-//    driver.findElementByCssSelector("a._1QZ6fC a._3ZgIXy").click()
-
-
-
     val your_orders = driver.findElementByCssSelector("a._1AHrFc._2k0gmP")
 
     val mouseHover = new Actions(driver)
@@ -52,12 +43,6 @@ class CreateCustomTest extends FlatSpec with TestSetUp {
     //.sleep(5000)
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS)
 
-    //    val mouseHover = new Actions(driver)
-    //    mouseHover.moveToElement(your_orders)
-    //    mouseHover.build().perform()
-    //    webdriverwait.until(ExpectedConditions.visibilityOfElementLocated(By.id("nav-flyout-yourAccount")))
-    //    driver.findElementByCssSelector("#navbar #nav-flyout-anchor #nav-flyout-yourAccount .nav-template.nav-flyout-content.nav-tpl-itemList #nav-item-signout").click()
-    //    Thread.sleep(5000)
     driver.close()
   }
 
